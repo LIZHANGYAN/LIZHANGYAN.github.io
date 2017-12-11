@@ -6,21 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://lizhangyan.github.io">
-  <title>[原]C#连接SQLServer | 你好，欢迎</title>
+  <title>Archives: 2017/12 | 你好，欢迎</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="首先你的头文件里必须引用 using System.Data; using System.Data.SqlClient;  然后是连接数据库 SqlConnection con = new SqlConnection(&amp;quot;Data Source=LZY; Initial Catalog=Student; Integrated Security=true&amp;quot;)  其中Data Sou">
-<meta name="keywords" content="SQL,C#">
-<meta property="og:type" content="article">
-<meta property="og:title" content="[原]C#连接SQLServer">
-<meta property="og:url" content="https://lizhangyan.github.io/2014/04/19/原-C-连接SQLServer/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="你好，欢迎">
+<meta property="og:url" content="https://lizhangyan.github.io/archives/2017/12/index.html">
 <meta property="og:site_name" content="你好，欢迎">
-<meta property="og:description" content="首先你的头文件里必须引用 using System.Data; using System.Data.SqlClient;  然后是连接数据库 SqlConnection con = new SqlConnection(&amp;quot;Data Source=LZY; Initial Catalog=Student; Integrated Security=true&amp;quot;)  其中Data Sou">
-<meta property="og:image" content="http://img.blog.csdn.net/20140419000525593?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjYxMDI3Ng==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-12-11T08:53:00.521Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[原]C#连接SQLServer">
-<meta name="twitter:description" content="首先你的头文件里必须引用 using System.Data; using System.Data.SqlClient;  然后是连接数据库 SqlConnection con = new SqlConnection(&amp;quot;Data Source=LZY; Initial Catalog=Student; Integrated Security=true&amp;quot;)  其中Data Sou">
-<meta name="twitter:image" content="http://img.blog.csdn.net/20140419000525593?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjYxMDI3Ng==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta name="twitter:title" content="你好，欢迎">
   
     <link rel="alternative" href="/atom.xml" title="你好，欢迎" type="application/atom+xml">
   
@@ -152,181 +145,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-原-C-连接SQLServer" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      [原]C#连接SQLServer
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-photo">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/12/11/My-Gallery/" class="archive-article-date">
+  	<time datetime="2017-12-11T14:19:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-11</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/12/11/My-Gallery/">My Gallery</a>
     </h1>
   
 
-        
-        <a href="/2014/04/19/原-C-连接SQLServer/" class="archive-article-date">
-  	<time datetime="2014-04-18T16:07:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-04-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>首先你的头文件里必须引用</p>
-<pre code_snippet_id="300627" snippet_file_name="blog_20140419_1_7861871" class="csharp" name="code">using System.Data;
-using System.Data.SqlClient;</pre>
+        <div class="article-info info-on-right">
+          
+          
 
-<p>然后是连接数据库</p>
-<pre code_snippet_id="300627" snippet_file_name="blog_20140419_2_1780260" class="csharp" name="code">SqlConnection con = new SqlConnection(&quot;Data Source=LZY; Initial Catalog=Student; Integrated Security=true&quot;)</pre>
-
-<p>其中Data Source后面给的是服务器名，我用的是本地数据库</p>
-<p>Initial Catalog后面是数据库名；</p>
-<p>Integrated Secutity后面如果为“true”或者“SSPI”，表示指定windows 身份验证，如果为“false”，表示不指定Windows身份验证；</p>
-<p>然后是打开数据库</p>
-<pre code_snippet_id="300627" snippet_file_name="blog_20140419_3_8334695" class="csharp" name="code">con.Open();
-MessageBox.Show(&quot;数据库&quot; + con.ServerVersion + con.State);</pre>
-
-<p>ServerVersion好像是可以看你数据库的下图蓝色圈里的数字，不知道是什么东西，State则是数据库的状态：打开还是关闭</p>
-<p><img src="http://img.blog.csdn.net/20140419000525593?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMjYxMDI3Ng==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
-<p>附上一个完整代码</p>
-<pre code_snippet_id="300627" snippet_file_name="blog_20140419_4_1406073" class="csharp" name="code">using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-
-namespace SQL
-{
-    public partial class OpenSQL : Form
-    {
-        public OpenSQL()
-        {
-            InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            using (SqlConnection con = new SqlConnection(&quot;Data Source=LZY; Initial Catalog=Student; Integrated Security=true&quot;))
-            {
-                try
-                {
-                    con.Open();
-                    MessageBox.Show(&quot;数据库&quot;+con.ServerVersion+con.State);</pre><pre code_snippet_id="300627" snippet_file_name="blog_20140419_5_992152" class="csharp" name="code">                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                finally
-                {
-                      con.Close();
-                      MessageBox.Show(&quot;数据库&quot;  + con.State);
-                      Application.Exit();
-                }
-            }
-        }
-    }
-}
-</pre>
-
-<p>&nbsp;</p>
-<pre><code>&lt;div&gt;
-    作者：u012610276 发表于2014/4/19 0:07:16 [原文链接](http://blog.csdn.net/lzylizhangyan/article/details/24063033)
-&lt;/div&gt;
-&lt;div&gt;
-阅读：517 评论：0 [查看评论](http://blog.csdn.net/lzylizhangyan/article/details/24063033#comments)
-&lt;/div&gt;
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">C#</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2014/10/26/原-那个虐了我的杭电1000/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          [原]那个虐了我的杭电1000
-        
-      </div>
-    </a>
   
   
-    <a href="/2014/04/13/原-括号匹配/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">[原]括号匹配</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -349,8 +210,8 @@ namespace SQL
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
