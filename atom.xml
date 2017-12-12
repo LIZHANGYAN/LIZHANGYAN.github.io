@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>你好，欢迎</title>
   
-  <subtitle>这里就是我的闲话</subtitle>
+  <subtitle>闲话多说</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lizhangyan.github.io/"/>
