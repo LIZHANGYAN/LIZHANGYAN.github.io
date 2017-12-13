@@ -81,19 +81,19 @@
 
 
 
-<meta name="description" content="统计学习方法大部分内容总结自李航博士的统计学习方法">
+<meta name="description" content="统计学习方法大部分内容总结自李航博士的统计学习方法 课件：统计学习方法课件 2.感知机Define:它是一个二分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取{+1，-1}。 2.1感知机模型">
 <meta name="keywords" content="统计学习,机器学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[原]统计学习方法笔记（二）">
 <meta property="og:url" content="https://lizhangyan.github.io/2017/05/26/统计学习方法（二）/index.html">
 <meta property="og:site_name" content="你好，欢迎">
-<meta property="og:description" content="统计学习方法大部分内容总结自李航博士的统计学习方法">
+<meta property="og:description" content="统计学习方法大部分内容总结自李航博士的统计学习方法 课件：统计学习方法课件 2.感知机Define:它是一个二分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取{+1，-1}。 2.1感知机模型">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://lizhangyan.github.io/2017/05/26/统计学习方法（二）/1.png">
-<meta property="og:updated_time" content="2017-12-13T10:54:40.278Z">
+<meta property="og:updated_time" content="2017-12-13T10:57:14.768Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[原]统计学习方法笔记（二）">
-<meta name="twitter:description" content="统计学习方法大部分内容总结自李航博士的统计学习方法">
+<meta name="twitter:description" content="统计学习方法大部分内容总结自李航博士的统计学习方法 课件：统计学习方法课件 2.感知机Define:它是一个二分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取{+1，-1}。 2.1感知机模型">
 <meta name="twitter:image" content="https://lizhangyan.github.io/2017/05/26/统计学习方法（二）/1.png">
 
 
@@ -356,10 +356,10 @@
       
 
       
-        <h1 id="统计学习方法"><a href="#统计学习方法" class="headerlink" title="统计学习方法"></a>统计学习方法</h1><p>大部分内容总结自<strong>李航</strong>博士的<strong><em>统计学习方法</em></strong><br><a id="more"></a></p>
+        <h1 id="统计学习方法"><a href="#统计学习方法" class="headerlink" title="统计学习方法"></a>统计学习方法</h1><p>大部分内容总结自<strong>李航</strong>博士的<strong><em>统计学习方法</em></strong></p>
 <p>课件：<a href="http://download.csdn.net/detail/u012610276/9850578" target="_blank" rel="noopener">统计学习方法课件</a></p>
 <h2 id="2-感知机"><a href="#2-感知机" class="headerlink" title="2.感知机"></a>2.感知机</h2><p><strong><em>Define:</em></strong>它是一个二分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取<strong>{+1，-1}</strong>。</p>
-<h3 id="2-1感知机模型"><a href="#2-1感知机模型" class="headerlink" title="2.1感知机模型"></a>2.1感知机模型</h3><!-- more -->
+<h3 id="2-1感知机模型"><a href="#2-1感知机模型" class="headerlink" title="2.1感知机模型"></a>2.1感知机模型</h3><a id="more"></a>
 <p>感知机是一个判别模型，所以它有自己的决策函数：</p>
 <p><span class="MathJax_Preview"></span><div class="MathJax_Display" role="textbox" aria-readonly="true" style="text-align: center;"><span class="MathJax" id="MathJax-Element-1654-Frame"><nobr><span class="math" id="MathJax-Span-20751" style="width: 11.547em; display: inline-block;"><span style="display: inline-block; position: relative; width: 9.379em; height: 0px; font-size: 123%;"><span style="position: absolute; clip: rect(1.358em 1000em 2.713em -0.431em); top: -2.274em; left: 0.003em;"><span class="mrow" id="MathJax-Span-20752"><span class="mi" id="MathJax-Span-20753" style="font-family: MathJax_Math-italic;">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.057em;"></span></span><span class="mo" id="MathJax-Span-20754" style="font-family: MathJax_Main;">(</span><span class="mi" id="MathJax-Span-20755" style="font-family: MathJax_Math-italic;">x</span><span class="mo" id="MathJax-Span-20756" style="font-family: MathJax_Main;">)</span><span class="mo" id="MathJax-Span-20757" style="font-family: MathJax_Main; padding-left: 0.274em;">=</span><span class="mi" id="MathJax-Span-20758" style="font-family: MathJax_Math-italic; padding-left: 0.274em;">s</span><span class="mi" id="MathJax-Span-20759" style="font-family: MathJax_Math-italic;">i</span><span class="mi" id="MathJax-Span-20760" style="font-family: MathJax_Math-italic;">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mi" id="MathJax-Span-20761" style="font-family: MathJax_Math-italic;">n</span><span class="mo" id="MathJax-Span-20762" style="font-family: MathJax_Main;">(</span><span class="mi" id="MathJax-Span-20763" style="font-family: MathJax_Math-italic;">w</span><span class="mo" id="MathJax-Span-20764" style="font-family: MathJax_Main; padding-left: 0.22em;">⋅</span><span class="mi" id="MathJax-Span-20765" style="font-family: MathJax_Math-italic; padding-left: 0.22em;">x</span><span class="mo" id="MathJax-Span-20766" style="font-family: MathJax_Main; padding-left: 0.22em;">+</span><span class="mi" id="MathJax-Span-20767" style="font-family: MathJax_Math-italic; padding-left: 0.22em;">b</span><span class="mo" id="MathJax-Span-20768" style="font-family: MathJax_Main;">)</span></span><span style="display: inline-block; width: 0px; height: 2.279em;"></span></span></span><span style="border-left-width: 0.003em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.337em; vertical-align: -0.397em;"></span></span></nobr></span></div><script type="math/tex; mode=display" id="MathJax-Element-1654">f(x)=sign(w \cdot x+b)</script></p>
 <p><strong>特征空间：</strong><span class="MathJax_Preview"></span><div class="MathJax_Display" role="textbox" aria-readonly="true" style="text-align: center;"><span class="MathJax" id="MathJax-Element-1655-Frame"><nobr><span class="math" id="MathJax-Span-20769" style="width: 7.482em; display: inline-block;"><span style="display: inline-block; position: relative; width: 6.073em; height: 0px; font-size: 123%;"><span style="position: absolute; clip: rect(1.412em 1000em 2.659em -0.485em); top: -2.274em; left: 0.003em;"><span class="mrow" id="MathJax-Span-20770"><span class="mi" id="MathJax-Span-20771" style="font-family: MathJax_Math-italic;">χ</span><span class="mo" id="MathJax-Span-20772" style="font-family: MathJax_Main; padding-left: 0.274em;">⊆</span><span class="msubsup" id="MathJax-Span-20773" style="padding-left: 0.274em;"><span style="display: inline-block; position: relative; width: 1.249em; height: 0px;"><span style="position: absolute; clip: rect(1.412em 1000em 2.442em -0.431em); top: -2.274em; left: 0.003em;"><span class="mi" id="MathJax-Span-20774" style="font-family: MathJax_Math-italic;">R</span><span style="display: inline-block; width: 0px; height: 2.279em;"></span></span><span style="position: absolute; top: -2.707em; left: 0.762em;"><span class="mi" id="MathJax-Span-20775" style="font-size: 70.7%; font-family: MathJax_Math-italic;">n</span><span style="display: inline-block; width: 0px; height: 2.279em;"></span></span></span></span><span class="mo" id="MathJax-Span-20776" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-20777" style="font-family: MathJax_Math-italic; padding-left: 0.165em;">x</span><span class="mo" id="MathJax-Span-20778" style="font-family: MathJax_Main; padding-left: 0.274em;">⊆</span><span class="mi" id="MathJax-Span-20779" style="font-family: MathJax_Math-italic; padding-left: 0.274em;">χ</span></span><span style="display: inline-block; width: 0px; height: 2.279em;"></span></span></span><span style="border-left-width: 0.003em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.27em; vertical-align: -0.33em;"></span></span></nobr></span></div><script type="math/tex; mode=display" id="MathJax-Element-1655">\chi \subseteq R^n, x \subseteq \chi</script></p>
