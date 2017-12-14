@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="你好，欢迎">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
-<meta property="og:updated_time" content="2017-12-14T02:27:05.971Z">
+<meta property="og:updated_time" content="2017-12-14T06:36:33.691Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python基础">
 <meta name="twitter:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
@@ -487,6 +487,12 @@
 </li>
 <li><p>案例二 带参函数</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">def print_max(a, b):</span><br><span class="line">  if a &gt; b:</span><br><span class="line">      print(a, &apos;is maximum&apos;)</span><br><span class="line">  elif a == b:</span><br><span class="line">      print(a, &apos;is equal to&apos;, b)</span><br><span class="line">  else:</span><br><span class="line">      print(b, &apos;is maximum&apos;)</span><br><span class="line"></span><br><span class="line">print_max(3, 4)</span><br><span class="line"></span><br><span class="line">x = 5</span><br><span class="line">y = 7</span><br><span class="line">print_max(x, y)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>案例三 局部变量<br>只在声明的函数内起作用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">x = 50</span><br><span class="line"></span><br><span class="line">def func(x):</span><br><span class="line">    print(&apos;x is&apos;, x)</span><br><span class="line">    x = 2 # 局部变量</span><br><span class="line">    print(&apos;Changed local x to&apos;, x)</span><br><span class="line"></span><br><span class="line">func(x)</span><br><span class="line">print(&apos;x is still&apos;, x)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>global 语句<br>通过关键字<strong>global</strong>，确定变量是在最外面的代码块中定义的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">x = 50</span><br><span class="line"></span><br><span class="line">def func():</span><br><span class="line">    global x # global关键字</span><br><span class="line"></span><br><span class="line">    print(&apos;x is&apos;,x)</span><br><span class="line">    x = 2</span><br><span class="line">    print(&apos;Changed global x to&apos;,x)</span><br><span class="line"></span><br><span class="line">func() # 此处没有传递变量</span><br><span class="line">print(&apos;Value of x is&apos;, x)</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 
