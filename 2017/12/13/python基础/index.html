@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+
+<head>
+
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="python,语言," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="你好，欢迎" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="keywords" content="python,语言">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python基础">
+<meta property="og:url" content="https://lizhangyan.github.io/2017/12/13/python基础/index.html">
+<meta property="og:site_name" content="你好，欢迎">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
+<meta property="og:updated_time" content="2017-12-13T14:43:45.675Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python基础">
+<meta name="twitter:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://lizhangyan.github.io/2017/12/13/python基础/"/>
+
+
+
+
+
+  <title>python基础 | 你好，欢迎</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+        <a href="https://github.com/LIZHANGYAN"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">你好，欢迎</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">闲话多说</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lizhangyan.github.io/2017/12/13/python基础/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lizhangyan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/labixiaoxin.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="你好，欢迎">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">python基础</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-13T19:47:07+08:00">
+                2017-12-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/就会这么点语言/" itemprop="url" rel="index">
+                    <span itemprop="name">就会这么点语言</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <img src="/2017/12/13/python基础/1.jpg" title="PYTHON">
+<a id="more"></a>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="在GNU-Linux下安装"><a href="#在GNU-Linux下安装" class="headerlink" title="在GNU/Linux下安装"></a>在GNU/Linux下安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update &amp;&amp; apt-get install python3</span><br></pre></td></tr></table></figure>
+<h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><ul>
+<li>教育版的PyCharm</li>
+<li>Vim + jedi-vim</li>
+</ul>
+<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>  <strong>注释</strong>是任何存在于<strong>#</strong>号右侧的文字，主要作用是写给读者看的笔记<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&apos;hello world&apos;) # print 函数</span><br></pre></td></tr></table></figure></p>
+<h2 id="字面常量"><a href="#字面常量" class="headerlink" title="字面常量"></a>字面常量</h2><p>  一个字面常量（Literal Constants）的例子是诸如5、1.23这样的数字，或者是如<code>这是一串文本</code> 或 <code>This is a string</code> 这样的文本。</p>
+<h2 id="数字"><a href="#数字" class="headerlink" title="数字"></a>数字</h2><ul>
+<li>整数 Integers</li>
+<li>浮点数 Floats</li>
+</ul>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>  一串字符串（String）是字符（Characters）的序列（Sequence）。<br>  字符串是不可变的。</p>
+<h2 id="引号"><a href="#引号" class="headerlink" title="引号"></a>引号</h2><ul>
+<li><p>单引号</p>
+<p><code>&#39;Quote me on this&#39;</code></p>
+</li>
+<li><p>双引号</p>
+<p><code>&quot;What&#39;s your name?&quot;</code></p>
+</li>
+<li><p>三引号<br>用来指定多行字符串，可以在三引号之间自由换行。</p>
+<h2 id="格式化方法"><a href="#格式化方法" class="headerlink" title="格式化方法"></a>格式化方法</h2><p>使用<strong>format()</strong>方法从其他变量构建字符串。<br>如，str_format.py:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">age = 20</span><br><span class="line">name = &apos;Swaroop&apos;</span><br><span class="line"></span><br><span class="line">print(&apos;&#123;0&#125; was &#123;1&#125; years old when he wrote this book&apos;.format(name,age))</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="转义序列"><a href="#转义序列" class="headerlink" title="转义序列"></a>转义序列</h2><ul>
+<li>换行符<code>\n</code></li>
+<li>制表符<code>\t</code></li>
+<li>单引号<code>\&#39;</code><br><code>What\&#39;s your name?</code></li>
+<li>原始字符串<br>未经特殊处理的字符串，比如转义序列，要在字符串前加<strong>r</strong>或<strong>R</strong>, 例如<br>  <code>r&quot;Newlines are indicated by \n&quot;</code><blockquote>
+<p>使用正则表达式时应全程使用<strong>原始字符串</strong></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="变量-Veriables"><a href="#变量-Veriables" class="headerlink" title="变量 Veriables"></a>变量 Veriables</h2><blockquote>
+<p>变量的值可以变化</p>
+<h2 id="对象-Object"><a href="#对象-Object" class="headerlink" title="对象 Object"></a>对象 Object</h2><p>Python是<strong>强面向对象</strong>的，因为所有的一切都是对象，包括<em>数字、字符串与函数</em>.</p>
+</blockquote>
+<h2 id="逻辑行与物理行"><a href="#逻辑行与物理行" class="headerlink" title="逻辑行与物理行"></a>逻辑行与物理行</h2><ul>
+<li>Physical Line<blockquote>
+<p>编写程序是所看到的内容</p>
+</blockquote>
+</li>
+<li><p>Logical Line</p>
+<blockquote>
+<p>Python编辑器所看到的单个语句</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一个物理行，两个逻辑行</span><br><span class="line">i = 5; print(i);</span><br><span class="line"></span><br><span class="line"># 两个物理行，两个逻辑行</span><br><span class="line">i = 5;</span><br><span class="line">print(i)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>显式行连接<br>如果有一行非常长的代码，可以用反斜杠将其拆分成多个物理行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = &apos;This is a string, \</span><br><span class="line">This continues the string.&apos;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>隐式行连接<br>逻辑行以括号开始。</p>
+</li>
+</ul>
+<h2 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h2><p><strong>空白区</strong>在Python中十分重要。逻辑行的开头留下空白区（空格或者制表符）用以确定行的缩进级别，并且确定语句分组。</p>
+<h2 id="具有相同缩进的语句被称为块-block"><a href="#具有相同缩进的语句被称为块-block" class="headerlink" title="具有相同缩进的语句被称为块(block)"></a>具有相同缩进的语句被称为<strong>块(block)</strong></h2><h1 id="运算符与表达式"><a href="#运算符与表达式" class="headerlink" title="运算符与表达式"></a>运算符与表达式</h1><h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><ul>
+<li><code>+</code></li>
+<li><code>-</code></li>
+<li><code>*</code></li>
+<li><code>**</code> 乘方</li>
+<li><code>/</code></li>
+<li><code>//</code> 整除<blockquote>
+<p>x 除以 y 并对结果向下取整</p>
+</blockquote>
+</li>
+<li><code>%</code></li>
+<li><code>&lt;&lt;</code> 左移<blockquote>
+<p>二进制</p>
+</blockquote>
+</li>
+<li><code>&gt;&gt;</code> 右移<blockquote>
+<p>二进制</p>
+</blockquote>
+</li>
+<li><code>&amp;</code> 按位与</li>
+<li><code>|</code> 按位或</li>
+<li><code>^</code> 按位异或</li>
+<li><code>~</code> 按位取反</li>
+<li><code>&lt;</code>, <code>&lt;=</code></li>
+<li><code>&gt;</code>, <code>&gt;=</code></li>
+<li><code>==</code>, <code>!=</code></li>
+<li><code>not</code>, <code>and</code>, <code>or</code><h2 id="数值运算与赋值的快捷方式"><a href="#数值运算与赋值的快捷方式" class="headerlink" title="数值运算与赋值的快捷方式"></a>数值运算与赋值的快捷方式</h2></li>
+<li><code>变量 = 变量 运算 表达式</code> –&gt; <code>变量 运算 = 表达式</code></li>
+<li><p>求值顺序</p>
+<blockquote>
+<p>最好使用<strong>圆括号</strong>进行分组</p>
+</blockquote>
+<ul>
+<li><code>ambda</code>: Lambda 表达式</li>
+<li><code>if - else</code>: 条件表达式</li>
+<li><code>or</code></li>
+<li><code>and</code></li>
+<li><code>not x</code></li>
+<li><code>in</code>, <code>not in</code>, <code>is</code>, <code>is not</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>,<code>&gt;=</code>, <code>!=</code>,<code>==</code></li>
+<li><code>|</code></li>
+<li><code>^</code></li>
+<li><code>&amp;</code></li>
+<li><code>&lt;&lt;</code>, <code>&gt;&gt;</code></li>
+<li>+, -</li>
+<li><code>*</code>, <code>/</code>, <code>//</code></li>
+<li><code>+x</code>,<code>-x</code>, <code>~x</code> :正、负、按位取反</li>
+<li><code>**</code></li>
+<li><code>x[index]</code>, <code>x[index:index]</code>, <code>x(arguments...)</code>, <code>x.attribute</code> :下标、切片、调用、属性引用</li>
+<li><code>(expressiongs...)</code>, <code>[expressions...]</code>, <code>{key:value...}</code>, <code>{expressions...}</code> : 显示绑定或数组、显示列表、显示字典、显示设置<blockquote>
+<p>上述优先级从下往上越来越高</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="控制流"><a href="#控制流" class="headerlink" title="控制流"></a>控制流</h1><p>Python中有三种控制流语句-<code>if</code>,<code>for</code> 和 <code>while</code>。</p>
+<h2 id="if-语句"><a href="#if-语句" class="headerlink" title="if 语句"></a><strong>if</strong> 语句</h2><p><em>if</em> 语句用以检查条件：如果条件为真（True）</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">number = 23;</span><br><span class="line">guess = int(input(&apos;Enter an integer : &apos;))</span><br><span class="line"></span><br><span class="line">if guess == number:</span><br><span class="line">    print(&apos;Congratulations, you guessed it.&apos;)</span><br><span class="line">    print(&apos;(but you do not win any prizes!)&apos;)</span><br><span class="line">elif guess &lt; number:</span><br><span class="line">    print(&apos;No, it is a little higher than that&apos;)</span><br><span class="line">else:</span><br><span class="line">    print(&apos;No, it is a little lower than that&apos;)</span><br><span class="line"></span><br><span class="line">print(&apos;Done&apos;)</span><br></pre></td></tr></table></figure>
+<h2 id="while-语句"><a href="#while-语句" class="headerlink" title="while 语句"></a><strong>while</strong> 语句</h2><p><em>while</em> 语句当条件为真时重复执行某块语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">number = 23</span><br><span class="line">running = True</span><br><span class="line"></span><br><span class="line">while running:</span><br><span class="line">    guess = int(input(&apos;Enter an integer : &apos;))</span><br><span class="line">    if guess == number:</span><br><span class="line">        print(&apos;Congratulations, you guess it.&apos;)</span><br><span class="line">        running = False</span><br><span class="line">    elif guess &lt;=number:</span><br><span class="line">        print(&apos;No, it is a little higher than that.&apos;)</span><br><span class="line">    else:</span><br><span class="line">        print(&apos;No, it is a little lower than that.&apos;)</span><br><span class="line">else:</span><br><span class="line">    print(&apos;The while loop is over.&apos;)</span><br><span class="line"></span><br><span class="line">print(&apos;Done&apos;)</span><br></pre></td></tr></table></figure>
+<h2 id="for-语句"><a href="#for-语句" class="headerlink" title="for 语句"></a><strong>for</strong> 语句</h2><p><em>for…in</em> 语句会在一系列对象上进行迭代（Iterates）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for i in range(2, 5):</span><br><span class="line">    print(i)</span><br><span class="line">else:</span><br><span class="line">    print(&apos;The for loop is over&apos;)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>range()</code> 函数生成数字序列</p>
+</blockquote>
+<hr>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p><strong>函数</strong> 是指可重复使用的程序片段。通过关键词<strong><em>def</em></strong>来定义。</p>
+<ul>
+<li><p>案例一 无参函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def say_hello():</span><br><span class="line">    print(&apos;hello world&apos;)</span><br><span class="line"></span><br><span class="line">say_hello()</span><br><span class="line">say_hello()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>案例二 带参函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">def print_max(a, b):</span><br><span class="line">  if a &gt; b:</span><br><span class="line">      print(a, &apos;is maximum&apos;)</span><br><span class="line">  elif a == b:</span><br><span class="line">      print(a, &apos;is equal to&apos;, b)</span><br><span class="line">  else:</span><br><span class="line">      print(b, &apos;is maximum&apos;)</span><br><span class="line"></span><br><span class="line">print_max(3, 4)</span><br><span class="line"></span><br><span class="line">x = 5</span><br><span class="line">y = 7</span><br><span class="line">print_max(x, y)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/语言/" rel="tag"># 语言</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/12/六级作文模板/" rel="next" title="六级作文模板">
+                <i class="fa fa-chevron-left"></i> 六级作文模板
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/labixiaoxin.png"
+                alt="lizhangyan" />
+            
+              <p class="site-author-name" itemprop="name">lizhangyan</p>
+              <p class="site-description motion-element" itemprop="description">你不来，我的闲话说给谁听？</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/LIZHANGYAN" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x5B89;&#x88C5;" class="headerlink" title="&#x5B89;&#x88C5;"></a>&#x5B89;&#x88C5;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#在GNU-Linux下安装"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#&#x5728;GNU-Linux&#x4E0B;&#x5B89;&#x88C5;" class="headerlink" title="&#x5728;GNU/Linux&#x4E0B;&#x5B89;&#x88C5;"></a>&#x5728;GNU/Linux&#x4E0B;&#x5B89;&#x88C5;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑器"><span class="nav-number">1.2.</span> <span class="nav-text"><a href="#&#x7F16;&#x8F91;&#x5668;" class="headerlink" title="&#x7F16;&#x8F91;&#x5668;"></a>&#x7F16;&#x8F91;&#x5668;</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x57FA;&#x7840;" class="headerlink" title="&#x57FA;&#x7840;"></a>&#x57FA;&#x7840;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注释"><span class="nav-number">2.1.</span> <span class="nav-text"><a href="#&#x6CE8;&#x91CA;" class="headerlink" title="&#x6CE8;&#x91CA;"></a>&#x6CE8;&#x91CA;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字面常量"><span class="nav-number">2.2.</span> <span class="nav-text"><a href="#&#x5B57;&#x9762;&#x5E38;&#x91CF;" class="headerlink" title="&#x5B57;&#x9762;&#x5E38;&#x91CF;"></a>&#x5B57;&#x9762;&#x5E38;&#x91CF;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数字"><span class="nav-number">2.3.</span> <span class="nav-text"><a href="#&#x6570;&#x5B57;" class="headerlink" title="&#x6570;&#x5B57;"></a>&#x6570;&#x5B57;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串"><span class="nav-number">2.4.</span> <span class="nav-text"><a href="#&#x5B57;&#x7B26;&#x4E32;" class="headerlink" title="&#x5B57;&#x7B26;&#x4E32;"></a>&#x5B57;&#x7B26;&#x4E32;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引号"><span class="nav-number">2.5.</span> <span class="nav-text"><a href="#&#x5F15;&#x53F7;" class="headerlink" title="&#x5F15;&#x53F7;"></a>&#x5F15;&#x53F7;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#格式化方法"><span class="nav-number">2.6.</span> <span class="nav-text"><a href="#&#x683C;&#x5F0F;&#x5316;&#x65B9;&#x6CD5;" class="headerlink" title="&#x683C;&#x5F0F;&#x5316;&#x65B9;&#x6CD5;"></a>&#x683C;&#x5F0F;&#x5316;&#x65B9;&#x6CD5;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转义序列"><span class="nav-number">2.7.</span> <span class="nav-text"><a href="#&#x8F6C;&#x4E49;&#x5E8F;&#x5217;" class="headerlink" title="&#x8F6C;&#x4E49;&#x5E8F;&#x5217;"></a>&#x8F6C;&#x4E49;&#x5E8F;&#x5217;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量-Veriables"><span class="nav-number">2.8.</span> <span class="nav-text"><a href="#&#x53D8;&#x91CF;-Veriables" class="headerlink" title="&#x53D8;&#x91CF; Veriables"></a>&#x53D8;&#x91CF; Veriables</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象-Object"><span class="nav-number">2.9.</span> <span class="nav-text"><a href="#&#x5BF9;&#x8C61;-Object" class="headerlink" title="&#x5BF9;&#x8C61; Object"></a>&#x5BF9;&#x8C61; Object</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑行与物理行"><span class="nav-number">2.10.</span> <span class="nav-text"><a href="#&#x903B;&#x8F91;&#x884C;&#x4E0E;&#x7269;&#x7406;&#x884C;" class="headerlink" title="&#x903B;&#x8F91;&#x884C;&#x4E0E;&#x7269;&#x7406;&#x884C;"></a>&#x903B;&#x8F91;&#x884C;&#x4E0E;&#x7269;&#x7406;&#x884C;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缩进"><span class="nav-number">2.11.</span> <span class="nav-text"><a href="#&#x7F29;&#x8FDB;" class="headerlink" title="&#x7F29;&#x8FDB;"></a>&#x7F29;&#x8FDB;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#具有相同缩进的语句被称为块-block"><span class="nav-number">2.12.</span> <span class="nav-text"><a href="#&#x5177;&#x6709;&#x76F8;&#x540C;&#x7F29;&#x8FDB;&#x7684;&#x8BED;&#x53E5;&#x88AB;&#x79F0;&#x4E3A;&#x5757;-block" class="headerlink" title="&#x5177;&#x6709;&#x76F8;&#x540C;&#x7F29;&#x8FDB;&#x7684;&#x8BED;&#x53E5;&#x88AB;&#x79F0;&#x4E3A;&#x5757;(block)"></a>&#x5177;&#x6709;&#x76F8;&#x540C;&#x7F29;&#x8FDB;&#x7684;&#x8BED;&#x53E5;&#x88AB;&#x79F0;&#x4E3A;<strong>&#x5757;(block)</strong></span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运算符与表达式"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x8FD0;&#x7B97;&#x7B26;&#x4E0E;&#x8868;&#x8FBE;&#x5F0F;" class="headerlink" title="&#x8FD0;&#x7B97;&#x7B26;&#x4E0E;&#x8868;&#x8FBE;&#x5F0F;"></a>&#x8FD0;&#x7B97;&#x7B26;&#x4E0E;&#x8868;&#x8FBE;&#x5F0F;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符"><span class="nav-number">3.1.</span> <span class="nav-text"><a href="#&#x8FD0;&#x7B97;&#x7B26;" class="headerlink" title="&#x8FD0;&#x7B97;&#x7B26;"></a>&#x8FD0;&#x7B97;&#x7B26;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数值运算与赋值的快捷方式"><span class="nav-number">3.2.</span> <span class="nav-text"><a href="#&#x6570;&#x503C;&#x8FD0;&#x7B97;&#x4E0E;&#x8D4B;&#x503C;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;" class="headerlink" title="&#x6570;&#x503C;&#x8FD0;&#x7B97;&#x4E0E;&#x8D4B;&#x503C;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;"></a>&#x6570;&#x503C;&#x8FD0;&#x7B97;&#x4E0E;&#x8D4B;&#x503C;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#控制流"><span class="nav-number">4.</span> <span class="nav-text"><a href="#&#x63A7;&#x5236;&#x6D41;" class="headerlink" title="&#x63A7;&#x5236;&#x6D41;"></a>&#x63A7;&#x5236;&#x6D41;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#if-语句"><span class="nav-number">4.1.</span> <span class="nav-text"><a href="#if-&#x8BED;&#x53E5;" class="headerlink" title="if &#x8BED;&#x53E5;"></a><strong>if</strong> &#x8BED;&#x53E5;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#while-语句"><span class="nav-number">4.2.</span> <span class="nav-text"><a href="#while-&#x8BED;&#x53E5;" class="headerlink" title="while &#x8BED;&#x53E5;"></a><strong>while</strong> &#x8BED;&#x53E5;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for-语句"><span class="nav-number">4.3.</span> <span class="nav-text"><a href="#for-&#x8BED;&#x53E5;" class="headerlink" title="for &#x8BED;&#x53E5;"></a><strong>for</strong> &#x8BED;&#x53E5;</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数"><span class="nav-number">5.</span> <span class="nav-text"><a href="#&#x51FD;&#x6570;" class="headerlink" title="&#x51FD;&#x6570;"></a>&#x51FD;&#x6570;</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">闲话大人</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>
