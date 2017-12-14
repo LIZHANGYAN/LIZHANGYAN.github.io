@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="你好，欢迎">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
-<meta property="og:updated_time" content="2017-12-14T06:45:56.818Z">
+<meta property="og:updated_time" content="2017-12-14T06:56:31.621Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python基础">
 <meta name="twitter:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
@@ -449,6 +449,18 @@
 <p><li> global 语句</li></p>
 <p>通过关键字<strong>global</strong>，确定变量是在最外面的代码块中定义的<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">x = 50</span><br><span class="line"></span><br><span class="line">def func():</span><br><span class="line">    global x # global关键字</span><br><span class="line"></span><br><span class="line">    print(&apos;x is&apos;,x)</span><br><span class="line">    x = 2</span><br><span class="line">    print(&apos;Changed global x to&apos;,x)</span><br><span class="line"></span><br><span class="line">func() # 此处没有传递变量</span><br><span class="line">print(&apos;Value of x is&apos;, x)</span><br></pre></td></tr></table></figure></p>
 <p><li> 默认参数值</li></p>
+<p>当用户不想提供此参数值时。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def say(message, times=1):</span><br><span class="line">  print(message * times)</span><br><span class="line"></span><br><span class="line">say(&apos;Hello&apos;)</span><br><span class="line">say(&apos;World&apos;, 5)</span><br></pre></td></tr></table></figure>
+<p><li> 关键字参数 Keyword arguments</li></p>
+<p>只希望对函数的某些参数进行指定。</p>
+<blockquote>
+<p>优点</p>
+<blockquote>
+<p><li> 不用考虑参数顺序</li></p>
+<p><li> 只对我们希望赋予的参数赋值，只要其他的参数具有默认参数值</li></p>
+</blockquote>
+</blockquote>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def func(a, b=5, c=10):</span><br><span class="line">  print(&apos;a is&apos;, a, &apos;and b is&apos;, b, &apos;and c is&apos;, c)</span><br><span class="line"></span><br><span class="line">func(3, 7) # 赋值a=3,b=7,c是默认参数值</span><br><span class="line">func(25, c=24) # 赋值a=25,c=24,b是默认参数值</span><br><span class="line">func(c=50,a=100) # 赋值a=100,c=50,b是默认参数值，并且打乱参数顺序</span><br></pre></td></tr></table></figure>
 
       
     </div>
