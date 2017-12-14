@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="你好，欢迎">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
-<meta property="og:updated_time" content="2017-12-14T06:40:03.390Z">
+<meta property="og:updated_time" content="2017-12-14T06:44:11.880Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python基础">
 <meta name="twitter:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
@@ -370,19 +370,22 @@
 <p>  <code>&#39;Quote me on this&#39;</code></p>
 <p><li> 双引号</li></p>
 <p>  <code>&quot;What&#39;s your name?&quot;</code></p>
-<p><li> 三引号<br>  用来指定多行字符串，可以在三引号之间自由换行。</li></p>
+<p><li> 三引号</li></p>
+<p>  用来指定多行字符串，可以在三引号之间自由换行。</p>
 <h2 id="格式化方法"><a href="#格式化方法" class="headerlink" title="格式化方法"></a>格式化方法</h2><p>  使用<strong>format()</strong>方法从其他变量构建字符串。<br>  如，str_format.py:</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">age = 20</span><br><span class="line">name = &apos;Swaroop&apos;</span><br><span class="line"></span><br><span class="line">print(&apos;&#123;0&#125; was &#123;1&#125; years old when he wrote this book&apos;.format(name,age))</span><br></pre></td></tr></table></figure>
 <h2 id="转义序列"><a href="#转义序列" class="headerlink" title="转义序列"></a>转义序列</h2><p><li> 换行符<code>\n</code></li></p>
 <p><li> 制表符<code>\t</code></li></p>
-<p><li> 单引号<code>\&#39;</code><br>  <code>What\&#39;s your name?</code></li></p>
-<p><li> 原始字符串<br>  未经特殊处理的字符串，比如转义序列，要在字符串前加<strong>r</strong>或<strong>R</strong>, 例如<br>    <code>r&quot;Newlines are indicated by \n&quot;</code></li></p>
+<p><li> 单引号<code>\&#39;</code></li></p>
+<p>  <code>What\&#39;s your name?</code></p>
+<p><li> 原始字符串</li></p>
+<p>  未经特殊处理的字符串，比如转义序列，要在字符串前加<strong>r</strong>或<strong>R</strong>, 例如<br>    <code>r&quot;Newlines are indicated by \n&quot;</code></p>
 <blockquote>
 <p>使用正则表达式时应全程使用<strong>原始字符串</strong></p>
 </blockquote>
 <h2 id="变量-Veriables"><a href="#变量-Veriables" class="headerlink" title="变量 Veriables"></a>变量 Veriables</h2><blockquote>
 <p>变量的值可以变化</p>
-<h2 id="对象-Object"><a href="#对象-Object" class="headerlink" title="对象 Object"></a>对象 Object</h2><p>Python是<strong>强面向对象</strong>的，因为所有的一切都是对象，包括<li>数字、字符串与函数</li><li>.</li></p>
+<h2 id="对象-Object"><a href="#对象-Object" class="headerlink" title="对象 Object"></a>对象 Object</h2><p>Python是<strong>强面向对象</strong>的，因为所有的一切都是对象，包括&lt;<em>数字、字符串与函数</em>.</p>
 </blockquote>
 <h2 id="逻辑行与物理行"><a href="#逻辑行与物理行" class="headerlink" title="逻辑行与物理行"></a>逻辑行与物理行</h2><p><li> Physical Line</li></p>
 <blockquote>
@@ -424,26 +427,11 @@
 <blockquote>
 <p>最好使用<strong>圆括号</strong>进行分组</p>
 </blockquote>
-<pre><code>&lt;li&gt; `ambda`: Lambda 表达式
-&lt;li&gt; `if - else`: 条件表达式
-&lt;li&gt; `or`
-&lt;li&gt; `and`
-&lt;li&gt; `not x`
-&lt;li&gt; `in`, `not in`, `is`, `is not`, `&lt;`, `&lt;=`, `&gt;`,` &gt;=`, `!=`,` ==`
-&lt;li&gt; `|`
-&lt;li&gt; `^`
-&lt;li&gt; `&amp;`
-&lt;li&gt; `&lt;&lt;`, `&gt;&gt;`
-&lt;li&gt; +, -
-&lt;li&gt; `&lt;li&gt;`, `/`, `//`
-&lt;li&gt; `+x`,` -x`, `~x` :正、负、按位取反
-&lt;li&gt; `**`
-&lt;li&gt; `x[index]`, `x[index:index]`, `x(arguments...)`, `x.attribute` :下标、切片、调用、属性引用
-&lt;li&gt; `(expressiongs...)`, `[expressions...]`, `{key:value...}`, `{expressions...}` : 显示绑定或数组、显示列表、显示字典、显示设置
-</code></pre><h2 id="gt-上述优先级从下往上越来越高"><a href="#gt-上述优先级从下往上越来越高" class="headerlink" title="  &gt; 上述优先级从下往上越来越高"></a>  &gt; 上述优先级从下往上越来越高</h2><h1 id="控制流"><a href="#控制流" class="headerlink" title="控制流"></a>控制流</h1><p>Python中有三种控制流语句-<code>if</code>,<code>for</code> 和 <code>while</code>。</p>
+<p>  <li> <code>ambda</code>: Lambda 表达式<br>  </li><li> <code>if - else</code>: 条件表达式<br>  </li><li> <code>or</code><br>  </li><li> <code>and</code><br>  </li><li> <code>not x</code><br>  </li><li> <code>in</code>, <code>not in</code>, <code>is</code>, <code>is not</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>,<code>&gt;=</code>, <code>!=</code>,<code>==</code><br>  </li><li> <code>|</code><br>  </li><li> <code>^</code><br>  </li><li> <code>&amp;</code><br>  </li><li> <code>&lt;&lt;</code>, <code>&gt;&gt;</code><br>  </li><li> +, -<br>  </li><li> <code>&lt;li&gt;</code>, <code>/</code>, <code>//</code><br>  </li><li> <code>+x</code>,<code>-x</code>, <code>~x</code> :正、负、按位取反<br>  </li><li> <code>**</code><br>  </li><li> <code>x[index]</code>, <code>x[index:index]</code>, <code>x(arguments...)</code>, <code>x.attribute</code> :下标、切片、调用、属性引用<br>  </li><li> <code>(expressiongs...)</code>, <code>[expressions...]</code>, <code>{key:value...}</code>, <code>{expressions...}</code> : 显示绑定或数组、显示列表、显示字典、显示设置</li></p>
+<h2 id="gt-上述优先级从下往上越来越高"><a href="#gt-上述优先级从下往上越来越高" class="headerlink" title="  &gt; 上述优先级从下往上越来越高"></a>  &gt; 上述优先级从下往上越来越高</h2><h1 id="控制流"><a href="#控制流" class="headerlink" title="控制流"></a>控制流</h1><p>Python中有三种控制流语句-<code>if</code>,<code>for</code> 和 <code>while</code>。</p>
 <h2 id="if-语句"><a href="#if-语句" class="headerlink" title="if 语句"></a><strong>if</strong> 语句</h2><p><em>if</em> 语句用以检查条件：如果条件为真（True）</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">number = 23;</span><br><span class="line">guess = int(input(&apos;Enter an integer : &apos;))</span><br><span class="line"></span><br><span class="line">if guess == number:</span><br><span class="line">    print(&apos;Congratulations, you guessed it.&apos;)</span><br><span class="line">    print(&apos;(but you do not win any prizes!)&apos;)</span><br><span class="line">elif guess &lt; number:</span><br><span class="line">    print(&apos;No, it is a little higher than that&apos;)</span><br><span class="line">else:</span><br><span class="line">    print(&apos;No, it is a little lower than that&apos;)</span><br><span class="line"></span><br><span class="line">print(&apos;Done&apos;)</span><br></pre></td></tr></table></figure>
-<h2 id="while-语句"><a href="#while-语句" class="headerlink" title="while 语句"></a><strong>while</strong> 语句</h2><p><li>while</li><li> 语句当条件为真时重复执行某块语句</li></p>
+<h2 id="while-语句"><a href="#while-语句" class="headerlink" title="while 语句"></a><strong>while</strong> 语句</h2><p><em>while</em> 语句当条件为真时重复执行某块语句</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">number = 23</span><br><span class="line">running = True</span><br><span class="line"></span><br><span class="line">while running:</span><br><span class="line">    guess = int(input(&apos;Enter an integer : &apos;))</span><br><span class="line">    if guess == number:</span><br><span class="line">        print(&apos;Congratulations, you guess it.&apos;)</span><br><span class="line">        running = False</span><br><span class="line">    elif guess &lt;=number:</span><br><span class="line">        print(&apos;No, it is a little higher than that.&apos;)</span><br><span class="line">    else:</span><br><span class="line">        print(&apos;No, it is a little lower than that.&apos;)</span><br><span class="line">else:</span><br><span class="line">    print(&apos;The while loop is over.&apos;)</span><br><span class="line"></span><br><span class="line">print(&apos;Done&apos;)</span><br></pre></td></tr></table></figure>
 <h2 id="for-语句"><a href="#for-语句" class="headerlink" title="for 语句"></a><strong>for</strong> 语句</h2><p><li>for…in</li><li> 语句会在一系列对象上进行迭代（Iterates）。</li></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for i in range(2, 5):</span><br><span class="line">    print(i)</span><br><span class="line">else:</span><br><span class="line">    print(&apos;The for loop is over&apos;)</span><br></pre></td></tr></table></figure>
