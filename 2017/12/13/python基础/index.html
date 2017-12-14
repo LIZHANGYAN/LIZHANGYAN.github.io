@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="你好，欢迎">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
-<meta property="og:updated_time" content="2017-12-14T09:02:46.562Z">
+<meta property="og:updated_time" content="2017-12-14T09:04:07.991Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python基础">
 <meta name="twitter:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
@@ -477,9 +477,9 @@
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line"></span><br><span class="line">print(&apos;The command line arguments are:&apos;)</span><br><span class="line">for i in sys.argv:</span><br><span class="line">    print(i)</span><br><span class="line"></span><br><span class="line">print(&apos;\n\nThe PYTHONPATH is&apos;, sys.path, &apos;\n&apos;)</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><code>import sys</code>导入了sys模块</p>
+</blockquote>
 <h2 id="按字节码编译的-pyc文件"><a href="#按字节码编译的-pyc文件" class="headerlink" title="按字节码编译的.pyc文件"></a>按字节码编译的<strong>.pyc</strong>文件</h2><p>创建按字节码编译的(Byte-Compiled)文件，以.pyc作为扩展名，是Python的中间形式。</p>
 <p><li> <strong>from…import</strong>语句</li></p>
-</blockquote>
 <p>使用<code>from...import</code>导入模块，可以避免每次调用模块里函数都要输入模块名，<code>sys.argva</code>，但是最好使用<code>import</code>导入模块，可以避免名称冲突</p>
 <p><li> 模块的 <code>__name__</code></li></p>
 <p>用来确定模块是独立运行的还是被导入来运行的。<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    print(&apos;This program is being run by itself&apos;)</span><br><span class="line">else:</span><br><span class="line">    print(&apos;I am being imported from another module&apos;)</span><br></pre></td></tr></table></figure></p>
