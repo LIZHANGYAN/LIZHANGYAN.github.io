@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="你好，欢迎">
 <meta property="og:description" content="JAVA 环境变量配置 修改/etc/profile文件 计算机下所有的用户都有权限使用这些环境变量  在profile文件末尾加入： 123export JAVA_HOME=/opt/java/jdk1.8.0_131export PATH=$JAVA_HOME/bin:$PATHexport CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/to">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-14T05:55:58.764Z">
+<meta property="og:updated_time" content="2017-12-14T05:58:56.770Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置JAVA环境变量">
 <meta name="twitter:description" content="JAVA 环境变量配置 修改/etc/profile文件 计算机下所有的用户都有权限使用这些环境变量  在profile文件末尾加入： 123export JAVA_HOME=/opt/java/jdk1.8.0_131export PATH=$JAVA_HOME/bin:$PATHexport CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/to">
@@ -363,6 +363,7 @@
 </blockquote>
 <p>在<strong><em>profile</em></strong>文件末尾加入：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/opt/java/jdk1.8.0_131</span><br><span class="line">export PATH=$JAVA_HOME/bin:$PATH</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>修改结束后终端输入：<code>sudo source /etc/profile</code>，生效</p>
 <hr>
 <h2 id="修改-bash-profile文件"><a href="#修改-bash-profile文件" class="headerlink" title="修改.bash_profile文件"></a>修改.bash_profile文件</h2><blockquote>

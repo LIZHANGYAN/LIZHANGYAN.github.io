@@ -359,14 +359,12 @@
 
       
         
-          
-          JAVA 环境变量配置
-修改/etc/profile文件
-计算机下所有的用户都有权限使用这些环境变量
-
-在profile文件末尾加入：
-123export JAVA_HOME=/opt/java/jdk1.8.0_131export PATH=$JAVA_HOME/bin:$PATHexport C
-          ...
+          <h1 id="JAVA-环境变量配置"><a href="#JAVA-环境变量配置" class="headerlink" title="JAVA 环境变量配置"></a>JAVA 环境变量配置</h1><hr>
+<h2 id="修改-etc-profile文件"><a href="#修改-etc-profile文件" class="headerlink" title="修改/etc/profile文件"></a>修改/etc/profile文件</h2><blockquote>
+<p>计算机下所有的用户都有权限使用这些环境变量</p>
+</blockquote>
+<p>在<strong><em>profile</em></strong>文件末尾加入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/opt/java/jdk1.8.0_131</span><br><span class="line">export PATH=$JAVA_HOME/bin:$PATH</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/12/14/配置JAVA环境变量/#more" rel="contents">
