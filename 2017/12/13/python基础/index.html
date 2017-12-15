@@ -91,7 +91,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
 <meta property="og:image" content="https://lizhangyan.github.io/2017/12/13/python基础/packagestruct.jpg">
-<meta property="og:updated_time" content="2017-12-15T02:46:18.596Z">
+<meta property="og:updated_time" content="2017-12-15T02:50:02.716Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python基础">
 <meta name="twitter:image" content="https://lizhangyan.github.io/2017/12/13/python基础/1.jpg">
@@ -515,6 +515,8 @@
 <p><li> 案例</li></p>
 <p><code>ds_using_tuple.py</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">zoo = (&apos;python&apos;, &apos;elephant&apos;, &apos;penguin&apos;)</span><br><span class="line">print(&apos;Number of animals in the zoo is&apos;, len(zoo))</span><br><span class="line"></span><br><span class="line">new_zoo = &apos;monkey&apos;, &apos;camel&apos;, zoo</span><br><span class="line">print(&apos;Number of cages in the new zoo is&apos;, len(new_zoo))</span><br><span class="line">print(&apos;All animal in new zoo are&apos;, new_zoo)</span><br><span class="line">print(&apos;Animals brought from old zoo are&apos;, new_zoo[2])</span><br><span class="line">print(&apos;Last animal brought from old zoo is&apos;, new_zoo[2][2])</span><br><span class="line">print(&apos;Number of animals in the new zoo is&apos;, len(new_zoo)-1+len(new_zoo[2]))</span><br></pre></td></tr></table></figure>
+<p>输出:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Number of animals in the zoo is 3</span><br><span class="line">Number of cages in the new zoo is 3</span><br><span class="line">All animal in new zoo are (&apos;monkey&apos;, &apos;camel&apos;, (&apos;python&apos;, &apos;elephant&apos;, &apos;penguin&apos;))</span><br><span class="line">Animals brought from old zoo are (&apos;python&apos;, &apos;elephant&apos;, &apos;penguin&apos;)</span><br><span class="line">Last animal brought from old zoo is penguin</span><br><span class="line">Number of animals in the new zoo is 5</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><li> 元组也是一个序列。</li></p>
 <p><li> 空元组由一对圆括号构成，就像<code>myempty = ()</code>。</li></p>
