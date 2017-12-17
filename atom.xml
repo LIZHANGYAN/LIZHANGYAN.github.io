@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lizhangyan.github.io/"/>
-  <updated>2017-12-17T13:53:59.923Z</updated>
+  <updated>2017-12-17T13:58:35.969Z</updated>
   <id>https://lizhangyan.github.io/</id>
   
   <author>
@@ -21,17 +21,14 @@
     <link href="https://lizhangyan.github.io/2017/12/17/html%E5%9F%BA%E7%A1%80/"/>
     <id>https://lizhangyan.github.io/2017/12/17/html基础/</id>
     <published>2017-12-17T13:50:48.000Z</published>
-    <updated>2017-12-17T13:53:59.923Z</updated>
+    <updated>2017-12-17T13:58:35.969Z</updated>
     
-    <content type="html"><![CDATA[<img src="/2017/12/17/html基础/html.jpg" title="HTML">]]></content>
+    <content type="html"><![CDATA[<img src="/2017/12/17/html基础/html.jpg" title="HTML"><h1 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h1><h2 id="What-is-HTML"><a href="#What-is-HTML" class="headerlink" title="What is HTML?"></a>What is HTML?</h2><p><strong>HTML</strong> denotes for <strong><em>HyperText Markup Language</em></strong>.<br><a id="more"></a><br>It uses <strong>tags</strong> to identify content.<br><strong>Example</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt; I&apos;m a paragraph&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;img src=&quot;/2017/12/17/html基础/html.jpg&quot; title=&quot;HTML&quot;&gt;
-
-      
+      &lt;img src=&quot;/2017/12/17/html基础/html.jpg&quot; title=&quot;HTML&quot;&gt;
+&lt;h1 id=&quot;HTML基础&quot;&gt;&lt;a href=&quot;#HTML基础&quot; class=&quot;headerlink&quot; title=&quot;HTML基础&quot;&gt;&lt;/a&gt;HTML基础&lt;/h1&gt;&lt;h2 id=&quot;What-is-HTML&quot;&gt;&lt;a href=&quot;#What-is-HTML&quot; class=&quot;headerlink&quot; title=&quot;What is HTML?&quot;&gt;&lt;/a&gt;What is HTML?&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;HTML&lt;/strong&gt; denotes for &lt;strong&gt;&lt;em&gt;HyperText Markup Language&lt;/em&gt;&lt;/strong&gt;.&lt;br&gt;
     
     </summary>
     
