@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="你好啊朋友">
+<meta name="description" content="QuerySelect  #field{width:500px;height:510px;background:black;position:relative} .bar{position:absolute;bottom:0;background:orange;border:1px solid brown;width:48px}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="我你还不了解吗">
-<meta property="og:url" content="https://lizhangyan.github.io/about/index.html">
+<meta property="og:title" content="你好，欢迎">
+<meta property="og:url" content="https://lizhangyan.github.io/algoJS/index.html">
 <meta property="og:site_name" content="你好，欢迎">
-<meta property="og:description" content="你好啊朋友">
+<meta property="og:description" content="QuerySelect  #field{width:500px;height:510px;background:black;position:relative} .bar{position:absolute;bottom:0;background:orange;border:1px solid brown;width:48px}">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-17T07:40:19.703Z">
+<meta property="og:updated_time" content="2017-12-17T08:07:09.434Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我你还不了解吗">
-<meta name="twitter:description" content="你好啊朋友">
+<meta name="twitter:title" content="你好，欢迎">
+<meta name="twitter:description" content="QuerySelect  #field{width:500px;height:510px;background:black;position:relative} .bar{position:absolute;bottom:0;background:orange;border:1px solid brown;width:48px}">
 
 
 
@@ -123,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://lizhangyan.github.io/about/"/>
+  <link rel="canonical" href="https://lizhangyan.github.io/algoJS/"/>
 
 
 
 
 
-  <title>我你还不了解吗 | 你好，欢迎</title>
+  <title> | 你好，欢迎</title>
   
 
 
@@ -260,7 +260,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">我你还不了解吗</h1>
+	<h1 class="post-title" itemprop="name headline"></h1>
 
 
 
@@ -272,8 +272,64 @@
       <div class="post-body">
         
         
-          
-<h1 id="你好啊朋友"><a href="#你好啊朋友" class="headerlink" title="你好啊朋友"></a>你好啊朋友</h1>
+          <html>
+<head><h1>QuerySelect</h1></head>
+<style>
+#field{width:500px;height:510px;background:black;position:relative}
+.bar{position:absolute;bottom:0;background:orange;border:1px solid brown;width:48px}
+</style>
+
+<body>
+<div id="field">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div>
+
+<script>
+!function(d){
+
+  var bars = [].slice.call(d.querySelectorAll('.bar'));
+  var arr = [8, 10, 3, 5, 6, 9, 2, 4, 7, 1];
+  var state = [];
+
+  var draw = function(){
+    var bar, s;
+    s = state.shift() || [];
+    for(bar in bars){
+      bars[bar].style.height = 50 * s[bar];
+      bars[bar].style.left = 50 * bar;
+    }
+  }
+
+  var sort = function(arr){
+    for(var i = 0; i < arr.length; i++){
+      for(var j = 0; j < arr.length - i - 1; j++){
+        if(arr[j] > arr[j+1]){
+          arr[j]   = arr[j] + arr[j+1];
+          arr[j+1] = arr[j] - arr[j+1];
+          arr[j]   = arr[j] - arr[j+1];
+          state.push(JSON.parse(JSON.stringify(arr)));
+        }
+      }
+    }
+  }
+
+  sort(arr);
+  setInterval(draw, 500);
+
+}(document)
+</script>
+</body>
+</html>
+
         
       </div>
       
@@ -416,7 +472,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#你好啊朋友"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x4F60;&#x597D;&#x554A;&#x670B;&#x53CB;" class="headerlink" title="&#x4F60;&#x597D;&#x554A;&#x670B;&#x53CB;"></a>&#x4F60;&#x597D;&#x554A;&#x670B;&#x53CB;</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">QuerySelect</span></a></li></ol></div>
             
 
           </div>
