@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lizhangyan.github.io/"/>
-  <updated>2017-12-18T09:02:23.797Z</updated>
+  <updated>2017-12-19T02:36:18.478Z</updated>
   <id>https://lizhangyan.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>paper笔记</title>
+    <link href="https://lizhangyan.github.io/2017/12/19/papernotes/"/>
+    <id>https://lizhangyan.github.io/2017/12/19/papernotes/</id>
+    <published>2017-12-19T02:20:28.000Z</published>
+    <updated>2017-12-19T02:36:18.478Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p align="center"><font size="24"><strong>课题虽难，起步也慢</strong></font></p><br><img src="/2017/12/19/papernotes/1.jpg" title="论文笔记"><br><a id="more"></a><p></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;24&quot;&gt;&lt;strong&gt;课题虽难，起步也慢&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;&lt;br&gt;&lt;img src=&quot;/2017/12/19/papernotes/1.jpg&quot; title=&quot;论文笔记&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="这个课题不好搞" scheme="https://lizhangyan.github.io/categories/%E8%BF%99%E4%B8%AA%E8%AF%BE%E9%A2%98%E4%B8%8D%E5%A5%BD%E6%90%9E/"/>
+    
+    
+      <category term="论文" scheme="https://lizhangyan.github.io/tags/%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>C++基础</title>
