@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lizhangyan.github.io/"/>
-  <updated>2017-12-22T00:45:09.621Z</updated>
+  <updated>2017-12-22T00:46:55.307Z</updated>
   <id>https://lizhangyan.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>facepreprocessing</title>
+    <title>3D人脸预处理</title>
     <link href="https://lizhangyan.github.io/2017/12/22/facepreprocessing/"/>
     <id>https://lizhangyan.github.io/2017/12/22/facepreprocessing/</id>
     <published>2017-12-22T00:39:38.000Z</published>
-    <updated>2017-12-22T00:45:09.621Z</updated>
+    <updated>2017-12-22T00:46:55.307Z</updated>
     
     <content type="html"><![CDATA[<img src="/2017/12/22/facepreprocessing/1.jpg" title="预处理过程"><a id="more"></a>]]></content>
     
