@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lizhangyan.github.io/"/>
-  <updated>2017-12-22T00:46:55.307Z</updated>
+  <updated>2017-12-22T08:41:26.039Z</updated>
   <id>https://lizhangyan.github.io/</id>
   
   <author>
@@ -17,13 +17,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>matlabpointcloud</title>
+    <link href="https://lizhangyan.github.io/2017/12/22/matlabpointcloud/"/>
+    <id>https://lizhangyan.github.io/2017/12/22/matlabpointcloud/</id>
+    <published>2017-12-22T08:41:25.000Z</published>
+    <updated>2017-12-22T08:41:26.039Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>3D人脸预处理</title>
     <link href="https://lizhangyan.github.io/2017/12/22/facepreprocessing/"/>
     <id>https://lizhangyan.github.io/2017/12/22/facepreprocessing/</id>
     <published>2017-12-22T00:39:38.000Z</published>
-    <updated>2017-12-22T00:46:55.307Z</updated>
+    <updated>2017-12-22T09:06:47.026Z</updated>
     
-    <content type="html"><![CDATA[<img src="/2017/12/22/facepreprocessing/1.jpg" title="预处理过程"><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<img src="/2017/12/22/facepreprocessing/1.jpg" title="预处理过程"><a id="more"></a><p>3D人脸预处理是整个算法实现的必不可少的一步，用深度摄像头获取的信息，大部分是点云，多少会有点瑕疵，更何况我们只需要面部区域，所以要对获取的三维点云进行预处理。<br>实验所用的3D人脸最初是这样的：<br><img src="/2017/12/22/facepreprocessing/original.jpg" title="原始图像"><br>预处理主要分为三个步骤：</p><p><li> Filling Hole</li></p><p><li> Face Cropping</li></p><p><li> Smoothing &amp; Pose Correction</li></p><p>效果如下图所示：<br><img src="/2017/12/22/facepreprocessing/steps.jpg" title="预处理步骤"></p>]]></content>
     
     <summary type="html">
     
