@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lizhangyan.github.io/"/>
-  <updated>2017-12-22T08:41:26.039Z</updated>
+  <updated>2018-01-10T15:24:58.000Z</updated>
   <id>https://lizhangyan.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pythonchange33</title>
+    <link href="https://lizhangyan.github.io/2018/01/09/pythonchange33/"/>
+    <id>https://lizhangyan.github.io/2018/01/09/pythonchange33/</id>
+    <published>2018-01-09T14:31:07.000Z</published>
+    <updated>2018-01-10T15:24:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/2018/01/09/pythonchange33/logo.jpg" title="PYTHON CHALLENGE"><a id="more"></a><h1 id="WebSite"><a href="#WebSite" class="headerlink" title="WebSite"></a>WebSite</h1><p><a href="http://www.pythonchallenge.com/" target="_blank" rel="noopener">PTYHON CHALLENGE 33</a></p><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem 1"></a>Problem 1</h2><p>As shown in following figure:<br><img src="/2018/01/09/pythonchange33/problem1.png" title="PROBLEM1"></p><p><li> Analysis</li></p><blockquote><p>In the above figure, we can see a formula <img src="http://latex.codecogs.com/gif.latex?2^{38}" alt="">, so<br>we can get the problem 1 is calcute the power.</p></blockquote><p><li> Python</li></p><blockquote><p><code>result = 2**28</code> ====&gt; <img src="http://latex.codecogs.com/gif.latex?{result=2^{38}}" alt=""></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;/2018/01/09/pythonchange33/logo.jpg&quot; title=&quot;PYTHON CHALLENGE&quot;&gt;
+    
+    </summary>
+    
+      <category term="就会这么点语言" scheme="https://lizhangyan.github.io/categories/%E5%B0%B1%E4%BC%9A%E8%BF%99%E4%B9%88%E7%82%B9%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="语言" scheme="https://lizhangyan.github.io/tags/%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="python" scheme="https://lizhangyan.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>matlabpointcloud</title>
