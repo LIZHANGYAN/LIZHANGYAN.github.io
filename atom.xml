@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lizhangyan.github.io/"/>
-  <updated>2018-01-10T15:24:58.000Z</updated>
+  <updated>2018-01-14T08:07:17.300Z</updated>
   <id>https://lizhangyan.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://lizhangyan.github.io/2018/01/09/pythonchange33/"/>
     <id>https://lizhangyan.github.io/2018/01/09/pythonchange33/</id>
     <published>2018-01-09T14:31:07.000Z</published>
-    <updated>2018-01-10T15:24:58.000Z</updated>
+    <updated>2018-01-14T08:07:17.300Z</updated>
     
-    <content type="html"><![CDATA[<img src="/2018/01/09/pythonchange33/logo.jpg" title="PYTHON CHALLENGE"><a id="more"></a><h1 id="WebSite"><a href="#WebSite" class="headerlink" title="WebSite"></a>WebSite</h1><p><a href="http://www.pythonchallenge.com/" target="_blank" rel="noopener">PTYHON CHALLENGE 33</a></p><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem 1"></a>Problem 1</h2><p>As shown in following figure:<br><img src="/2018/01/09/pythonchange33/problem1.png" title="PROBLEM1"></p><p><li> Analysis</li></p><blockquote><p>In the above figure, we can see a formula <img src="http://latex.codecogs.com/gif.latex?2^{38}" alt="">, so<br>we can get the problem 1 is calcute the power.</p></blockquote><p><li> Python</li></p><blockquote><p><code>result = 2**28</code> ====&gt; <img src="http://latex.codecogs.com/gif.latex?{result=2^{38}}" alt=""></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<img src="/2018/01/09/pythonchange33/logo.jpg" title="PYTHON CHALLENGE"><a id="more"></a><h1 id="WebSite"><a href="#WebSite" class="headerlink" title="WebSite"></a>WebSite</h1><p><a href="http://www.pythonchallenge.com/" target="_blank" rel="noopener">PTYHON CHALLENGE 33</a></p><h2 id="Problem-0"><a href="#Problem-0" class="headerlink" title="Problem 0"></a>Problem 0</h2><p>As shown in following figure:<br></p><p><li> Analysis</li></p><blockquote><p>In the above figure, we can see a formula <img src="http://latex.codecogs.com/gif.latex?2^{38}" alt="">, so<br>we can get the problem 1 is calcute the power.</p></blockquote><p><li> Python</li></p><blockquote><p><code>result = 2**28</code> ====&gt; <img src="http://latex.codecogs.com/gif.latex?{result=2^{38}}" alt=""></p></blockquote><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem 1"></a>Problem 1</h2><p>As shown in following figure:<br><img src="/2018/01/09/pythonchange33/problem1.jpg" title="PROBLEM1"></p><p><li> Analysis</li></p><blockquote></blockquote>]]></content>
     
     <summary type="html">
     
