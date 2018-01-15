@@ -94,7 +94,7 @@
 <meta property="og:image" content="http://latex.codecogs.com/gif.latex?2^{38}">
 <meta property="og:image" content="http://latex.codecogs.com/gif.latex?{result=2^{38}}">
 <meta property="og:image" content="https://lizhangyan.github.io/2018/01/09/pythonchange33/problem1.jpg">
-<meta property="og:updated_time" content="2018-01-15T06:01:37.978Z">
+<meta property="og:updated_time" content="2018-01-15T06:27:46.305Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="挑战Python33题">
 <meta name="twitter:image" content="https://lizhangyan.github.io/2018/01/09/pythonchange33/logo.jpg">
@@ -380,11 +380,28 @@
 </blockquote>
 <p><li> Python</li></p>
 <p>&gt;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">str = &quot;g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr&apos;q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj.&quot;</span><br><span class="line"></span><br><span class="line">strr = &apos;&apos;</span><br><span class="line">for s in str:</span><br><span class="line">    s_num = ord(s)</span><br><span class="line">    if (s_num&gt;=65 and s_num&lt;= 90) or (s_num&gt;=97 and s_num&lt;= 122):</span><br><span class="line">        s_num = s_num + 2</span><br><span class="line">        if s_num&gt;122:</span><br><span class="line">            s_num = s_num-122 - 1 + 97</span><br><span class="line">        if s_num&gt;90 and s_num &lt; 97:</span><br><span class="line">            s_num = s_num - 90 - 1+65</span><br><span class="line">    print(s+&apos;-----&gt;&apos;+chr(s_num))</span><br><span class="line">    strr = strr + chr(s_num)</span><br><span class="line">print(strr)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">ori = &quot;g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr&apos;q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj.&quot;</span><br><span class="line"></span><br><span class="line">aft = &apos;&apos;</span><br><span class="line">for s in str:</span><br><span class="line">    s_num = ord(s)</span><br><span class="line">    if (s_num&gt;=65 and s_num&lt;= 90) or (s_num&gt;=97 and s_num&lt;= 122):</span><br><span class="line">        s_num = s_num + 2</span><br><span class="line">        if s_num&gt;122:</span><br><span class="line">            s_num = s_num-122 - 1 + 97</span><br><span class="line">        if s_num&gt;90 and s_num &lt; 97:</span><br><span class="line">            s_num = s_num - 90 - 1+65</span><br><span class="line">    print(s+&apos;-----&gt;&apos;+chr(s_num))</span><br><span class="line">    strr = strr + chr(s_num)</span><br><span class="line">print(strr)</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>result</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i hope you didnt translate it by hand. thats what computers are for. doing it in by hand is inefficient and that&apos;s why this text is so long. using string.maketrans() is recommended. now apply on the url.</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Ennnnnnn…..<br>In the result, we can get the author want to use <code>string.maketrans()</code> to apply on URL. But <code>string.maketrans()</code> belongs to Python2. In <strong>Python3</strong>, the method <code>maketrans()</code> is a static method, we can acess the offical document <a href="https://docs.python.org/3/library/stdtypes.html?highlight=maketrans#str.maketrans" target="_blank" rel="noopener">OFFICIAL DOCUMENT</a>.</p>
+<p><li> First we should get</li></p>
+</blockquote>
+<pre><code>`url=&quot;http://www.pythonchallenge.com/pc/def/map.html&quot;`
+</code></pre><blockquote>
+<p><li> Then useing the <code>maketrans()</code></li></p>
+</blockquote>
+<p>  <code>urltable = url.maktrans(str, aft)</code></p>
+<blockquote>
+<p><li> Last we use <code>translate()</code>,</li></p>
+</blockquote>
+<p><code>urlaft = url.translate(urltable)</code></p>
+<p>So, the result is</p>
+<p><code>httr://yyy.rathopehcnngpig.eoo/re/fgh/ocr.hton</code></p>
+<p>Then we can get the real <strong><em>URL</em></strong>:</p>
+<p><code>http://www.pythonchallenge.com/pc/def/ocr.html</code></p>
 
       
     </div>
