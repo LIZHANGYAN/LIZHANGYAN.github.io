@@ -94,7 +94,7 @@
 <meta property="og:image" content="http://latex.codecogs.com/gif.latex?2^{38}">
 <meta property="og:image" content="http://latex.codecogs.com/gif.latex?{result=2^{38}}">
 <meta property="og:image" content="https://lizhangyan.github.io/2018/01/09/pythonchange33/problem1.jpg">
-<meta property="og:updated_time" content="2018-01-15T06:29:38.554Z">
+<meta property="og:updated_time" content="2018-01-15T06:32:04.259Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="挑战Python33题">
 <meta name="twitter:image" content="https://lizhangyan.github.io/2018/01/09/pythonchange33/logo.jpg">
@@ -389,19 +389,19 @@
 <p>Ennnnnnn…..<br>In the result, we can get the author want to use <code>string.maketrans()</code> to apply on URL. But <code>string.maketrans()</code> belongs to Python2. In <strong>Python3</strong>, the method <code>maketrans()</code> is a static method, we can acess the offical document <a href="https://docs.python.org/3/library/stdtypes.html?highlight=maketrans#str.maketrans" target="_blank" rel="noopener">OFFICIAL DOCUMENT</a>.</p>
 <p><li> First we should get</li></p>
 </blockquote>
-<p>  <code>url=&quot;http://www.pythonchallenge.com/pc/def/map.html&quot;</code></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url=&quot;http://www.pythonchallenge.com/pc/def/map.html&quot;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><li> Then useing the <code>maketrans()</code></li></p>
 </blockquote>
-<p>  <code>urltable = url.maktrans(str, aft)</code></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">urltable = url.maktrans(str, aft)</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><li> Last we use <code>translate()</code>,</li></p>
 </blockquote>
-<p>  <code>urlaft = url.translate(urltable)</code></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">urlaft = url.translate(urltable)</span><br></pre></td></tr></table></figure>
 <p>So, the result is</p>
-<p> <code>httr://yyy.rathopehcnngpig.eoo/re/fgh/ocr.hton</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">httr://yyy.rathopehcnngpig.eoo/re/fgh/ocr.hton</span><br></pre></td></tr></table></figure>
 <p>Then we can get the real <strong><em>URL</em></strong>:</p>
-<p><code>http://www.pythonchallenge.com/pc/def/ocr.html</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://www.pythonchallenge.com/pc/def/ocr.html</span><br></pre></td></tr></table></figure>
 
       
     </div>
